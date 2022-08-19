@@ -4,7 +4,7 @@ const dbCOnnection = async()=>{
 
     try{
 
-        mongoose.createConnection( process.env.MONGO_CNN);
+        mongoose.connect( process.env.MONGO_CNN);
             //mongoose 6 ya no soporta las opciones ingresadas y vienen por defecto activadas por lo que ya no es 
             //necesario utilizar las siguientes opciones
                 // useNewUrlParser: true,
