@@ -1,11 +1,10 @@
 const mongoose = require('mongoose');
-const { UsuarioSchema } = require('../models/usuario')
 
 const dbCOnnection = async()=>{
 
     try{
 
-        mongoose.connect( process.env.MONGO_CNN);
+        mongoose.createConnection( process.env.MONGO_CNN);
             //mongoose 6 ya no soporta las opciones ingresadas y vienen por defecto activadas por lo que ya no es 
             //necesario utilizar las siguientes opciones
                 // useNewUrlParser: true,
