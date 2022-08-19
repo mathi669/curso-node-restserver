@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+const { UsuarioSchema } = require('../models/usuario')
 
 const dbCOnnection = async()=>{
 
@@ -20,8 +20,8 @@ const dbCOnnection = async()=>{
         throw new Error('Error a la hora de iniciar la base de datos');
     }
 
-}
 
+}
 
 module.exports ={
     dbCOnnection
