@@ -15,6 +15,7 @@ const dbCOnnection = async()=>{
                 // useFindAndModify: false
 
         console.log('Base de datos online');
+        // console.log(process.env)
 
     } catch(err){
         console.log(Error);
